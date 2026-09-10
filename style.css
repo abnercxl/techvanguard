@@ -1,0 +1,319 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #030303;
+    color: #40688e;}
+
+/**/
+
+.cabecalho {
+    background-color: #2b2b2b;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #40688e;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu a{
+    color: #40688e;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.6s ease;
+    
+}
+
+.titulo{
+    text-align: center;
+    color: #40688e;
+    border-color: black;
+    font-size: 32;
+    margin-bottom: 5px;
+}
+
+
+.container{
+    max-width: 2000px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+}
+
+.subtitulo{
+    color: #40688e;
+    text-align: center;
+}
+
+.nome{
+    color: #40688e;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.grade{
+    display: grid;
+    /* vai organizar todos os elementos (filhos) em linhas e colunas  */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* pra deixar tudo na horizontal */
+    gap: 25px;
+}
+
+.poster{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card1{
+    background-color: #1c2b38;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #454545;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px #40688e;
+}
+
+.resumo{
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.area-inscricao{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.coluna-form{
+    flex: 1;
+    min-width: 320px;
+    background-color: #1e3347;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #0088ff;
+}
+
+.coluna-midia{
+    flex: 1;
+    min-height: 320px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.coluna-form label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #4080bd;
+}
+
+.coluna-form input[type="text"],
+.coluna-form input[type="password"],
+.coluna-form input[type="email"],
+.coluna-form input[type="date"],
+.coluna-form input select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #174875;
+    border-radius: 5px;
+    color: #fffbed;
+    font-size: 14px;
+}
+
+.btn-enviar{
+    background-color: #174875;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fffbed;
+    box-shadow: 0 4px 12px #1c2b38;
+}
+
+.btn-limpar{
+    background-color: #174875;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fffbed;
+    box-shadow: 0 4px 12px #1c2b38;
+}
+
+.btn-enviar:hover{
+    background-color: #40688e;
+}
+
+.btn-limpar:hover{
+    background-color: #40688e;
+}
+
+.tabela{
+    max-width: 2500px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #fffbed;
+
+}
+
+.titulo-tabela{
+    font-size: 25px;
+}
+
+.travis{
+    width: 100%;
+    background-color: #1c2b38;
+    text-align: left;
+    font-size: 15px;
+    box-shadow: 0 4px 12px #297dc7;
+}
+
+.travis th{
+    background-color: #104a81;
+    color: #fffbed;
+    padding: 16px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #40688e;
+}
+
+.travis2{
+    background-color: #0b3358;
+    color: #f4efdb;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fcfcfd;
+}
+
+.h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.p{
+    text-align: center;
+    margin: 10px;
+}
+
+.travis td{
+    padding: 16px;
+    border-bottom: 1px solid #006cd1;
+    color: #fffbed;
+}
+
+.linha{
+    height: 2px;
+    color: #40688e;
+}
+
+.conteudo{
+    background-color: #1c2b38;
+}
+
+.foto{
+    width: 100px;
+    height: 100px;
+}
+
+.card{
+    border-radius: 20px;
+    background-color: #1c2b38;
+    border-radius: 5px;
+
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    object-fit: cover;
+    box-shadow: 0 20px 25px #000000;
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    margin:auto ;  
+    margin-bottom: 30px;
+}
+
+.preco{
+    font-size: 12px;
+    color: #40688e;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer{
+    border-top: 2px solid #40688e;
+    background-color: #1c2b38;
+    height: 70px;
+    align-items: center;
+}
+
+.card1:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px #40688e;
+}
+                                                        /*comentarios gerais*/                                          
+/*
+---------------------------------------------------------------cores-------------------------------------------------------------------
+
+cor vinho - #7f1734 
+cor legal - #fdfce5
+azul irado - #1c2b38
+azul escuro irado - #1e3347
+azul iraco claro - #0088ff
+azul iradamente irado - #40688e
+azul iradamente irado mais claro - #4080bd
+azul massa - #174875
+---------------------------------------------------------------códigos------------------------------------------------------------
+
+display: flex; ........................ eles passam a ficar na mesma fila
+justify-content: space-between; ....... coloca cada filho separado
+max-width ............................. largura maxima da tela
+margin ................................ margem
+grid .................................. organizar todos os elementos (filhos) em linhas e colunas
+border-radius.......................... arredonda as bordas
+overflow............................... corta e esconde qqr conteúdo que ultrapasse os limites
+gap.................................... espaçamento
+align-items: flex-start;............... alinha o topo de todas as colunas
+flex................................... faz o formulario crescer proporcionalmente
+font-weight: bold;..................... deixa a fonte em negrito
+cursor: pointer........................ a seta se transforma em mão
+text-transform: uppercase;............. deixa tudo em maiusculo
+text-transform: downcase;.............. deixa tudo em minusculo
+padding ............................... é uma "margem interna", garante que independente do tamanho da tela, tenha uma distancia minima da margem da tela
+    no padding, o primeir vai sempre ser o "y", por exemplo, ali está 0 20px, o 0 é de "cima", o 20 é de lado
+*/

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">👨‍💻TechVanguard</div>
+
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="sobreNos.html" target="_blank">Sobre nós</a>
+            <a href="Serviços.html" target="_blank">Serviços</a>
+            <a href="Contato.html" target="_blank">Contato</a>
+
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <main class="container"><!--conteúdo principal do site-->
+        <h1 class="titulo">Cadastro Para Dicas Computação</h1>
+        <p class="subtitulo">Preencha seus dados para realizar a inscrição no TechVanguard</p>
+
+        <div class="area-inscricao">
+
+<!--
+ ================================================================formulario===========================================================
+-->
+            <form action="/processar-cadastro" method="post" class="coluna-form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required minlength="3" maxlength="50"><br>
+<!--
+ ----------------------------------------------------------------senha------------------------------------------------------------------
+-->
+                <label for="senha">senha de acesso</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required minlength="8" maxlength="15"><br>
+<!--
+ ----------------------------------------------------------------email------------------------------------------------------------------
+-->
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required minlength><br>
+<!--
+ ----------------------------------------------------------------data nascimento------------------------------------------------------
+-->
+                <label for="data_nasc">Data de Nascimento</label>
+                <input type="date" id="data_nasc" name="data_nascimento" min="1900-01-01" max="2026-12-31" required><br><br>
+                <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Li e Aceito os Termos de Uso</label><br><br>
+
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                    <button type="reset" class="btn-limpar">Limpar tudo</button><br>
+                </form>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="p">Dúvidas? Fale Conosco</p>
+        <p class="p">(17)99191-0323</p>
+    </footer>
+</body>
+</html>
+
+<!--
+ ---------------------------------------------------------comentarios gerais-------------------------------------------------------------
+
+ <form>.......... é usada para criar um formulario (exemplo, coloque o nome, email, etc)
+ <input>......... é usado para uma "resposta" (no form "coloque seu nome", você digita seu nome)
+
+ checkbox........ é a caixa para marcar (o quadrado para dar o check)
+ radio........... é a bolinha pra preencher
+ required........ torna um campo obrigatório
+ button.......... é literal só um botão
+ submit.......... enviar as respostas
+ reset........... limpar as respostas
+ unidade......... selecionar algum "campo"
+
+ -->
